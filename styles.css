@@ -98,7 +98,7 @@ hr {
 @media screen and (min-width:640px) {
     body {
         background: no-repeat var(--bg-body) top url(./images/background-pattern-desktop.svg);
-        background-size: 120vw;
+        background-size: 110vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -107,7 +107,7 @@ hr {
     }
 
     .card {
-        width: 40vw;
+        width: 34rem;
         min-width: 30rem;
         padding: 2.5rem 2.5rem 1rem 2.5rem;
         border-radius: 1rem;
