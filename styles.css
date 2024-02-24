@@ -19,6 +19,7 @@ figure, blockquote, dl, dd {
 body {
     background-color: var(--bg-body);
     background: no-repeat var(--bg-body) top url(./images/background-pattern-mobile.svg);
+    background-size: 100vw;
     font-family: 'Work Sans';
     margin: 1.5rem;
 }
@@ -80,8 +81,12 @@ hr {
     gap: 1.5rem;
 }
 
-#toggle-1, #toggle-2, #toggle-3, #toggle-4 {
+.toggle {
     cursor: pointer;
+}
+
+.toggle:hover {
+    color: rgb(170, 8, 168);
 }
 
 .disabled {
@@ -93,10 +98,17 @@ hr {
 @media screen and (min-width:640px) {
     body {
         background: no-repeat var(--bg-body) top url(./images/background-pattern-desktop.svg);
+        background-size: 120vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-height: 100svh;
     }
 
     .card {
-        max-width: 600px;
+        width: 40vw;
+        min-width: 30rem;
         padding: 2.5rem 2.5rem 1rem 2.5rem;
         border-radius: 1rem;
     }
